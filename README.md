@@ -20,7 +20,7 @@ If you want to build this image yourself, run the following to generate the comp
 
 ```bash
 $ rm *.tar.xz
-$ ./mkimage-raspbian.sh
+# ./mkimage-raspbian.sh
 ```
 Get some tacos.
 
@@ -38,4 +38,10 @@ This image does not do anything fancy, but if you want to test it out, run the f
 
 ```bash
 $ docker run --name raspbian -it schachr/raspbian-stretch:latest /bin/bash
+```
+
+Or if you built the image yourself:
+
+```bash
+$ docker run --name raspbian -it raspbian-stretch /bin/bash
 ```
